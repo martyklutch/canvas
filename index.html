@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My canvas</h1>
+
+        <!-- Search Form -->
+
+        <form action="" method="get">
+            <input type="text" name="search" placeholder="Search The Grid...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Filter Options -->
+        <div class="filter-options">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="art">Art</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="photography">Photography</button>
+        </div>
+
+        <!-- Grid Container -->
+
+        <div class="grid" id="feed">
+
+            <!-- Cards will be injected here by the script-->
+
+        </div>
+
+    </main>
+
+    <script src="js/app.js"> </script>
+
+</body>
+</html>
