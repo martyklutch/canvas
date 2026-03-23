@@ -310,3 +310,44 @@ header {
     gap: var(--spacing-sm);
     
 }
+
+/* Profile Layout */
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -40px;
+    border: 3px solid var(--color-bg);
+    background: #7b68d4;
+
+    display: block;
+    background: linear-gradient(135deg, #c9a0e8, #7b68d4);
+}
+
+.profile-banner {
+    background: var(--color-accent);
+    height: 280px;
+    width: 100%;
+} 
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+}
+/* Stats Layout */ 
+
+/* 2. gap on stats is 2px — way too tight, increase it */
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

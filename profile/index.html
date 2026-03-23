@@ -4,29 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-    <!-- same nav as every other page -->
-    <div class="logo">...</div>
-    <div class="searchBar">...</div>
-    <nav class="main-nav">...</nav>
-    <div class="auth-btns">...</div>
+        <!-- My Logo -->
+        <div class="logo">
+            <a href="index.html">Canvas</a>
+        </div>
+
+        <!-- Search Form -->
+
+        <div class= "searchBar">
+            <input class="search-input" type="text" name="search" placeholder="Search The Grid...">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">Projects</a></li> 
+            </ul>
+        </nav>
+
 </header>
 
 <main>
 
 
     <!-- Profile section-->
-     <div class="profile-header">
+    <div class="profile-header">
 
-        <div class="profile-banner">
+    <div class="profile-banner">
+        <img src="#" alt="banner image">
+    </div>
 
+    <div class="profile-info">
+        <img class="profile-avatar" src="#" alt="profile picture">
+        <div class="profile-details">
+            <h1>Martin Martinez</h1>
+            <p>@martyklutch - California, US</p>
         </div>
-        
-        
+        <div class="profile-actions">
+            <button class="btn-commission">Open for commissions</button>
+            <button class="btn-follow">Follow</button>
+        </div>
+    </div>
 
-     </div>
+    <div class="profile-bio">
+        <p>3d environment artist. dabbling with VFX...</p>
+    </div>
+
+    <div class="profile-stats">
+        <div class="stat">
+            <span class="stat-number">1,000</span>
+            <span class="stat-label">posts</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">20.5k</span>
+            <span class="stat-label">followers</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">10</span>
+            <span class="stat-label">projects</span>
+        </div>
+    </div>
+
+    <div class="profile-tabs">
+        <button class="tab active">Portfolio</button>
+        <button class="tab">Projects</button>
+        <button class="tab">Process</button>
+        <button class="tab">About</button>
+        <button class="tab">Commissions</button>
+    </div>
+
+</div>
+
+        <!-- Masonary Grid -->
+        <div class="grid" id="feed">...</div>
+
 
 
 </main>
