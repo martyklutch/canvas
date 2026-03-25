@@ -13,7 +13,8 @@
 :root {
     /* Colors */
     --color-bg: #111318;
-    --color-surface: #1a1c24;
+    --color-surface: #292c36;
+    --color-surface2: #1a1c22;
     --color-tone1: #2C2F3A;
     --color-border: rgba(0, 0, 0, 0.08);
     --color-text-primary: #ffffff;
@@ -79,7 +80,7 @@ header {
     align-items: center;
     gap: 2rem;
     padding: 1rem 2rem;
-    background-color: var(--color-surface);
+    background-color: var(--color-surface2);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -197,7 +198,7 @@ header {
     padding: var(--spacing-lg);
     background-color: var(--color-surface);
     border-radius: var(--radius-lg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .signup-form input {
