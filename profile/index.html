@@ -6,7 +6,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="detail-view">
     <header>
         <!-- My Logo -->
         <div class="logo">
@@ -29,7 +29,11 @@
             </ul>
         </nav>
 
-</header>
+        <div class="auth-btns">
+            <a href="login/index.html" class="btn-login">Login</a>
+            <a href="signup/index.html" class="btn-signup">Sign Up</a>
+
+        </div>
 
 <main>
 
@@ -37,12 +41,10 @@
     <!-- Profile section-->
     <div class="profile-header">
 
-    <div class="profile-banner">
-        <img src="#" alt="banner image">
-    </div>
+    <div class="profile-banner"></div>
 
     <div class="profile-info">
-        <img class="profile-avatar" src="#" alt="profile picture">
+        <img class="profile-avatar" src="" alt="profile picture">
         <div class="profile-details">
             <h1>Martin Martinez</h1>
             <p>@martyklutch - California, US</p>
@@ -53,22 +55,23 @@
         </div>
     </div>
 
-    <div class="profile-bio">
-        <p>3d environment artist. dabbling with VFX...</p>
-    </div>
-
-    <div class="profile-stats">
-        <div class="stat">
-            <span class="stat-number">1,000</span>
-            <span class="stat-label">posts</span>
+    <div class="profile-meta">
+        <div class="profile-bio">
+            <p>3d environment artist. dabbling with VFX...</p>
         </div>
-        <div class="stat">
-            <span class="stat-number">20.5k</span>
-            <span class="stat-label">followers</span>
-        </div>
-        <div class="stat">
-            <span class="stat-number">10</span>
-            <span class="stat-label">projects</span>
+        <div class="profile-stats">
+            <div class="stat">
+                <span class="stat-number">1,000</span>
+                <span class="stat-label">posts</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">20.5k</span>
+                <span class="stat-label">followers</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">10</span>
+                <span class="stat-label">projects</span>
+            </div>
         </div>
     </div>
 
