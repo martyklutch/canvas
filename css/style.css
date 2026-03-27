@@ -27,6 +27,7 @@ VARIABLES
     --color-gold: #f0c050;
     --color-red: #A30B37;
     --color-hover: #7798A6;
+    --color-lightgold: #FFCB77;
 
     /* Typography */
     --font-main: 'Inter', sans-serif;
@@ -97,7 +98,7 @@ header {
 /* Navigation */
 .main-nav ul {
     display: flex;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     justify-content: space-between;
 }
 
@@ -152,12 +153,14 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Sign up btn and Log in btn */
+
 .btn-login, .btn-signup {
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-pill);
     font-weight: 500;
     background-color: var(--color-accent);
-    color: #fff;
+    color: var(--color-hover);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -220,11 +223,12 @@ input[type="date"]::-webkit-datetime-edit {
 
 .signup-form button {
     width: 100%;
-    padding: 12px;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-md);
     background-color: var(--color-accent);
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     font-size: 16px;
     cursor: pointer;
 }
@@ -236,7 +240,7 @@ input[type="date"]::-webkit-datetime-edit {
 .signup-container h2,
 .signup-container p {
     text-align: center;
-    margin-bottom: var(--spacing-lg);
+    margin: var(--spacing-lg);
 }
 
 /* log in here */
@@ -319,9 +323,126 @@ input[type="date"]::-webkit-datetime-edit {
     
 }
 
+
 /* Profile Layout */
 
+/* .profile-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-banner { grid-column: 1 / -1; }  
+.profile-info   { grid-column: 1 / -1; }  
+.profile-bio    { grid-column: 1; }        
+.profile-stats  { grid-column: 2; }        
+.profile-tabs   { grid-column: 1 / -1; }  full width */
+
 .profile-banner {
+    height: 12rem;
+    background: var(--color-accent);
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--color-bg);
+    border-color: white;
+    background: linear-gradient(135deg, #c9a0e8, #7b68d5);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.profile-details {
+    margin: 1rem;
+}
+
+.btn-follow {
+    background: var(--color-accent);
+    color: var(--color-text-primary);
+    border-radius: var(--radius-pill);
+    padding: 1rem;
+}
+
+
+.btn-commission {
+    background: var(--color-gold);
+    border-radius: var(--radius-pill);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.btn-follow:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-commission:hover {
+    background-color: var(--color-lightgold);
+}
+
+
+.profile-actions {
+    margin: 1rem;
+}
+
+
+.profile-bio {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post {
+    display: flex;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-pill);
+    padding: 1rem;
+    color: var(--color-text-primary);
+}
+
+.profile-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: 0.5rem;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: var(--color-text-primary);
     background-color: var(--color-accent);
-    background-size: cover;
+    padding: 1rem;
+    border-radius: var(--radius-pill);
+    margin: 1rem;
+}
+
+.profile-tabs :hover {
+    background-color: var(--color-hover);
+}
+
+
+.divider {
+    border: none;
+    border-top: 1px solid white;
+    margin: 1rem 2rem;
 }
